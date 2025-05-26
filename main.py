@@ -1,1 +1,1 @@
-print("hacker")
+print("don't push")
