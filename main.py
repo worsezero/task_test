@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -20,8 +19,7 @@ try:
         EC.text_to_be_present_in_element((By.ID, "price"),"$100")
     )
 
-    button = browser.find_element(By.ID, "book")
-    button.click()
+    browser.find_element(By.ID, "book").click()
 
     # находим x и вычисляем y
     x_element = browser.find_element(By.ID, "input_value")
@@ -33,10 +31,11 @@ try:
     input_field.send_keys(x)
 
     # нажимаем Submit
-    button = browser.find_element(By.ID, "solve")
-    button.click()
+    browser.find_element(By.ID, "solve").click()
 
 finally:
     # чтобы успеть увидеть результат
     time.sleep(30)
     browser.quit()
+
+
