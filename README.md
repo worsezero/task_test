@@ -1,2 +1,2 @@
 # task_test
-home task
+Здесь будут задачи с курса "https://stepik.org/course/575/syllabus".
